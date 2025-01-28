@@ -17,7 +17,19 @@ public class Main {
     }
     
     public String reverse(String message) {
-        return message;
+
+        StringBuilder res = new StringBuilder();
+
+        // Appending elements of s in res
+        res.append(message);
+
+        // reverse StringBuilder res
+        res.reverse();
+
+        // print reversed String
+        System.out.println(res);
+
+        return res.toString();
     }
     
 }
